@@ -5,12 +5,16 @@ from insert_dishe import *
 from update_dish import *
 from show_dish import *
 
+
 class App(H):
     def __init__(self,master):
         self.master = master
         self.frames = {}
         self.h = H()
         self.setUpUi()
+
+    def showMe(self):
+        print("Hey now")
 
     def setUpUi(self):
         self.frames["insert_dishes"] = Frame(self.master)
